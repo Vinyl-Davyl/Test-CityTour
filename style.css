@@ -1,0 +1,212 @@
+  .container {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    margin-top: 4rem;
+    flex-flow: row-reverse;
+  }
+  
+  table {
+    transition: width 0.5s;
+  }
+
+  thead{
+    text-align: left;
+  }
+
+  .table--full {
+    width: 100%;
+    /* margin-right: 300px; */
+  }
+  
+  .table-name {
+    width: 60%;
+  }
+  
+  .table-button {
+    width: 35%;
+  }
+  
+  .icon {
+    transition: 0.5s;
+    margin-right: 30px;
+  }
+  
+  tr:nth-of-type(2n) {
+    background: #e9ecef;
+ }
+
+ tbody tr:nth-of-type(1) {
+    border-top: 2px solid rgb(29, 28, 28);
+  }
+
+  tbody tr:nth-of-type(1) .icon {
+    background: url("./img/tour-guide.png");
+    background-size: cover;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+  }
+  
+  tbody tr:nth-of-type(2) .icon {
+    background: url("./img/pickup.png");
+    background-size: cover;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+  }
+  
+  tbody tr:nth-of-type(3) .icon {
+    background: url("./img/insurance.png");
+    background-size: cover;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+  }
+  
+  tbody tr:nth-of-type(4) .icon {
+    background: url(./img/w-bottle.png);
+    background-size: cover;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+  }
+  tbody tr:nth-of-type(5) .icon {
+    background: url(./img/coffee-break.png);
+    background-size: cover;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+  }
+  tbody tr:nth-of-type(6) .icon {
+    background: url(./img/dinner.png);
+    background-size: cover;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+  }
+  tbody tr:nth-of-type(7) .icon {
+    background: url(./img/bike.png);
+    background-size: cover;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .icon--small {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+  }
+  
+  tbody tr {
+    transition: 0.5s;
+    height: 68px;
+  }
+
+  .toggle {
+    margin-bottom: 10px;
+    margin-top: 15px;
+  }
+  .toggle label {
+    position: relative;
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+    background-color: #e1e1e1;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: inset 0 0 2px 1px rgba(0, 0, 0, 0.1);
+    -webkit-tap-highlight-color: transparent;
+  }
+  .toggle label:before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    height: 24px;
+    width: 24px;
+    background-color: #fff;
+    border-radius: 46px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    -webkit-animation: moveLeft 0.3s ease-in-out;
+            animation: moveLeft 0.3s ease-in-out;
+  }
+  .toggle input {
+    display: none;
+  }
+  .toggle input:checked + label {
+    background-color: #57de72;
+  }
+  .toggle input:checked + label:before {
+    transform: translateX(40px);
+    box-shadow: -1px -1px 5px rgba(0, 0, 0, 0.1);
+    -webkit-animation: moveRight 0.3s ease-in-out;
+            animation: moveRight 0.3s ease-in-out;
+  }
+  
+  @-webkit-keyframes moveRight {
+    0% {
+      width: 46px;
+      transform: translateX(0);
+    }
+    45% {
+      width: 52px;
+    }
+    100% {
+      width: 46px;
+      transform: translateX(40px);
+    }
+  }
+  
+  @keyframes moveRight {
+    0% {
+      width: 26px;
+      transform: translateX(0);
+    }
+    45% {
+      width: 52px;
+    }
+    100% {
+      width: 26px;
+      transform: translateX(40px);
+    }
+  }
+  @-webkit-keyframes moveLeft {
+    0% {
+      width: 26px;
+      transform: translateX(40px);
+    }
+    45% {
+      width: 52px;
+    }
+    100% {
+      width: 26px;
+      transform: translateX(0);
+    }
+  }
+  @keyframes moveLeft {
+    0% {
+      width: 26px;
+      transform: translateX(40px);
+    }
+    45% {
+      width: 52px;
+    }
+    100% {
+      width: 26px;
+      transform: translateX(0);
+    }
+  }
+
+
+
+
+
+
+
+
+ 
